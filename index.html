@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project #2 - 4578/12</title>
+
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="parallax"><h1> Welcome to Cryptocurrency land</h1></div>
+
+    <div class="bg-dark">
+
+    <!--header class="jumbotron jumbotron-fluid position-sticky"><h1>Cryptocurrency</h1></header-->
+    
+    <div class="btn-toolbar mb-3 bg-dark fixed-top" role="toolbar">        
+        <div class="btn-group mr-2  position-sticky" role="group">
+            <button type="button" class="btn btn-dark text-warning m-1" id="home">Currensies List</button> 
+            <button type="button" class="btn btn-dark text-warning m-1" id="live">Live Report</button> 
+            <button type="button" class="btn btn-dark text-warning m-1" id="about">About</button> 
+        </div>
+        <div class="input-group">
+            <input type="text" id="searchinp" class="form-control bg-dark text-warning m-1" placeholder="Search for currency" name="search">
+            <button type="button" class="btn btn-dark text-warning m-1" id="searchBtn">Exact Match</button>   
+        </div>
+    </div>
+        
+    <div class="ctnr container-fluid bg-dark">
+        <div class="spnr"></div>
+    </div>
+
+
+    
+    <!--div id="demo" class="card-deck">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Symbol</h3>
+                <p class="card-text">name</p>
+                <button class="moreinfo btn btn-primary">More Info</button>
+                <label>
+                    <input type="checkbox" checked><span class="slider"></span>
+                </label>
+                <div class="card-text info-here "></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Symbol</h3>
+                <p class="card-text">name</p>
+                <button class="moreinfo btn btn-primary">More Info</button>
+                
+                <div class="card-text info-here "></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Symbol</h3>
+                <p class="card-text">name</p>
+                <button class="moreinfo btn btn-primary">More Info</button>
+                
+                <div class="card-text info-here "></div>
+            </div>
+        </div>        
+    </div-->
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+                <div class="modal-header">
+                <h4 class="modal-title">You've selected too much coins.</h4>          
+                </div>
+                
+                <div class="modal-body">
+                    Cancel at least one coin to add <span class="coin2add"></span>
+                    <ul class="list-group">
+                        <li class="list-group-item"><input type="checkbox" name="" id="cb1" checked><label id="l1" for="cb1"></label></li>
+                        <li class="list-group-item"><input type="checkbox" name="" id="cb2" checked><label id="l2" for="cb2"></label></li>
+                        <li class="list-group-item"><input type="checkbox" name="" id="cb3" checked><label id="l3" for="cb3"></label></li>
+                        <li class="list-group-item"><input type="checkbox" name="" id="cb4" checked><label id="l4" for="cb4"></label></li>
+                        <li class="list-group-item"><input type="checkbox" name="" id="cb5" checked><label id="l5" for="cb5"></label></li>
+                    </ul>
+                </div>
+                
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="modalOK" data-dismiss="modal">OK</button>
+                <button type="button" class="btn btn-primary" id="modalCancel" data-dismiss="modal">Cancel</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    </div>
+    <div class="parallax"><p>Photo by Michael Steinberg from Pexels</p></div>
+</body>
+</html>
